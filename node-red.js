@@ -1,6 +1,6 @@
 [
     {
-        "id": "dd002821fcc9f65a",
+        "id": "9e05ebad5d0f23f8",
         "type": "tab",
         "label": "Flow 1",
         "disabled": false,
@@ -8,9 +8,9 @@
         "env": []
     },
     {
-        "id": "29e3ba226aafb13c",
+        "id": "a603d190746ab5cc",
         "type": "mqtt in",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MQTT Lux Externa",
         "topic": "romulo_e_samuel/luminosidade-externa",
         "qos": "2",
@@ -24,15 +24,15 @@
         "y": 160,
         "wires": [
             [
-                "ed8bebf1e0e0aff1",
-                "dfd7c957619903c9"
+                "8b95d497b56179bd",
+                "8e2e1e5bf24f46e3"
             ]
         ]
     },
     {
-        "id": "1bc1cea7095242e7",
+        "id": "46dfd495c82c74ad",
         "type": "mqtt in",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MQTT Lux Interna",
         "topic": "romulo_e_samuel/luminosidade-interna",
         "qos": "2",
@@ -46,15 +46,15 @@
         "y": 220,
         "wires": [
             [
-                "ed8bebf1e0e0aff1",
-                "84406ad272151570"
+                "8b95d497b56179bd",
+                "7dccfb7f13c753a0"
             ]
         ]
     },
     {
-        "id": "148a5c96372dcace",
+        "id": "2fb5e517f849ce12",
         "type": "mqtt in",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MQTT Umidade",
         "topic": "romulo_e_samuel/umidade",
         "qos": "2",
@@ -68,15 +68,15 @@
         "y": 340,
         "wires": [
             [
-                "ed8bebf1e0e0aff1",
-                "8fcdc7f65b66ec16"
+                "8b95d497b56179bd",
+                "ab3a16d7c038fadc"
             ]
         ]
     },
     {
-        "id": "dc76c34db893c15b",
+        "id": "6cf8d46fd6d28f29",
         "type": "mqtt in",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MQTT Temperatura",
         "topic": "romulo_e_samuel/temperatura",
         "qos": "2",
@@ -90,15 +90,15 @@
         "y": 300,
         "wires": [
             [
-                "ed8bebf1e0e0aff1",
-                "ae5b34b3b1219cca"
+                "8b95d497b56179bd",
+                "29d96824f5c95174"
             ]
         ]
     },
     {
-        "id": "259ca7d43b46afb1",
+        "id": "be20fe201518f7f8",
         "type": "mqtt in",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "",
         "topic": "romulo_e_samuel/cortina",
         "qos": "2",
@@ -112,15 +112,15 @@
         "y": 460,
         "wires": [
             [
-                "ed8bebf1e0e0aff1",
-                "8194b07fb734fe4b"
+                "8b95d497b56179bd",
+                "0ba7ea3cf4674bae"
             ]
         ]
     },
     {
-        "id": "bbc04656745cc850",
+        "id": "c804026c8af49a4c",
         "type": "mqtt in",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "",
         "topic": "romulo_e_samuel/cooler",
         "qos": "2",
@@ -134,15 +134,15 @@
         "y": 540,
         "wires": [
             [
-                "ed8bebf1e0e0aff1",
-                "e2b623893a3641d0"
+                "8b95d497b56179bd",
+                "b879d7039b415e13"
             ]
         ]
     },
     {
-        "id": "ed8bebf1e0e0aff1",
+        "id": "8b95d497b56179bd",
         "type": "debug",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "debug MQTT",
         "active": true,
         "tosidebar": true,
@@ -157,11 +157,11 @@
         "wires": []
     },
     {
-        "id": "ae5b34b3b1219cca",
+        "id": "29d96824f5c95174",
         "type": "ui-gauge",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Temperatura",
-        "group": "61af6c45fd141680",
+        "group": "f9c37a7d9054dcee",
         "order": 1,
         "value": "payload",
         "valueType": "msg",
@@ -199,11 +199,11 @@
         ]
     },
     {
-        "id": "84406ad272151570",
+        "id": "7dccfb7f13c753a0",
         "type": "ui-gauge",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Luminosidade Interna",
-        "group": "61af6c45fd141680",
+        "group": "f9c37a7d9054dcee",
         "order": 3,
         "value": "payload",
         "valueType": "msg",
@@ -241,11 +241,11 @@
         ]
     },
     {
-        "id": "8fcdc7f65b66ec16",
+        "id": "ab3a16d7c038fadc",
         "type": "ui-gauge",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Umidade",
-        "group": "61af6c45fd141680",
+        "group": "f9c37a7d9054dcee",
         "order": 2,
         "value": "payload",
         "valueType": "msg",
@@ -263,7 +263,7 @@
         "segments": [
             {
                 "from": "0",
-                "color": "#2196f3",
+                "color": "#33d17a",
                 "text": "",
                 "textType": "label"
             }
@@ -283,11 +283,11 @@
         ]
     },
     {
-        "id": "15a5ba302ca002f1",
+        "id": "4af9b0181a157f85",
         "type": "ui-form",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Formulario de limiares",
-        "group": "840109b6fbf1c21f",
+        "group": "733337ddc94bad58",
         "label": "Limiares",
         "order": 1,
         "width": 0,
@@ -330,26 +330,26 @@
         "className": "",
         "passthru": false,
         "dropdownOptions": [],
-        "x": 520,
-        "y": 900,
+        "x": 200,
+        "y": 860,
         "wires": [
             [
-                "4f4c981d65672e7b"
+                "0af5bd41515ff3fe"
             ]
         ]
     },
     {
-        "id": "e2b623893a3641d0",
+        "id": "b879d7039b415e13",
         "type": "ui-text",
-        "z": "dd002821fcc9f65a",
-        "group": "dea80e4a15dd75e6",
+        "z": "9e05ebad5d0f23f8",
+        "group": "02aa8637919cf834",
         "order": 2,
         "width": 0,
         "height": 0,
         "name": "Status Cooler",
-        "label": "Cooler",
+        "label": "Estado do Cooler",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "col-center",
         "style": false,
         "font": "",
         "fontSize": 16,
@@ -363,17 +363,17 @@
         "wires": []
     },
     {
-        "id": "abca0fe3f1b6f88c",
+        "id": "d37928a62c6ced89",
         "type": "ui-text",
-        "z": "dd002821fcc9f65a",
-        "group": "dea80e4a15dd75e6",
+        "z": "9e05ebad5d0f23f8",
+        "group": "02aa8637919cf834",
         "order": 1,
         "width": 0,
         "height": 0,
         "name": "Status Cortina",
-        "label": "Cortina",
+        "label": "Posicao da Cortina",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "col-center",
         "style": false,
         "font": "",
         "fontSize": 16,
@@ -387,11 +387,11 @@
         "wires": []
     },
     {
-        "id": "8194b07fb734fe4b",
+        "id": "0ba7ea3cf4674bae",
         "type": "function",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "ParserStatusCortina",
-        "func": "let angulo = msg.payload;\nlet status = \"\";\n\nif (angulo === 0) {\n    status = \" (ABERTO)\";\n} else if (angulo === 90){\n    status = \" (FECHADO)\"\n}\nmsg.payload = `${angulo}${status}`\nreturn msg;",
+        "func": "let angulo = msg.payload;\nlet status = \"\";\n\nif (angulo === 0) {\n    status = \" (Aberto)\";\n} else if (angulo === 90){\n    status = \" (Fechado)\"\n}\nmsg.payload = `${angulo} graus ${status}`\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -402,17 +402,17 @@
         "y": 460,
         "wires": [
             [
-                "abca0fe3f1b6f88c"
+                "d37928a62c6ced89"
             ]
         ]
     },
     {
-        "id": "b34c09c91d51bab7",
+        "id": "3271014c63d225ee",
         "type": "ui-switch",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Controle cooler",
         "label": "Switch Cooler",
-        "group": "92ca39749a9e6e12",
+        "group": "c6ae8b98409f5dd8",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -432,21 +432,21 @@
         "offvalueType": "bool",
         "officon": "",
         "offcolor": "",
-        "x": 1520,
-        "y": 1100,
+        "x": 1200,
+        "y": 1060,
         "wires": [
             [
-                "5402247044d243d4"
+                "eb02aa45f735d4e7"
             ]
         ]
     },
     {
-        "id": "8776ed98ddc8334f",
+        "id": "7d03a911b13f0433",
         "type": "ui-switch",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Modo Manual",
         "label": "Modo Manual",
-        "group": "92ca39749a9e6e12",
+        "group": "c6ae8b98409f5dd8",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -466,19 +466,21 @@
         "offvalueType": "bool",
         "officon": "",
         "offcolor": "",
-        "x": 1300,
-        "y": 1020,
+        "x": 980,
+        "y": 980,
         "wires": [
             [
-                "7693f62ecce93ec6"
+                "e74d69b81aa5524a",
+                "1c1a263de9b98559",
+                "c56ff31a148b03d8"
             ]
         ]
     },
     {
-        "id": "d67f12746d545216",
+        "id": "2c59408b6e6fc719",
         "type": "ui-slider",
-        "z": "dd002821fcc9f65a",
-        "group": "92ca39749a9e6e12",
+        "z": "9e05ebad5d0f23f8",
+        "group": "c6ae8b98409f5dd8",
         "name": "Slider Cortina",
         "label": "Angulacao",
         "tooltip": "",
@@ -501,18 +503,19 @@
         "colorTrack": "",
         "colorThumb": "",
         "showTextField": false,
-        "x": 1360,
-        "y": 1200,
+        "x": 1040,
+        "y": 1160,
         "wires": [
             [
-                "9c34836325b53f7c"
+                "1186566b17f69ebf"
             ]
-        ]
+        ],
+        "info": "slider de angulacao"
     },
     {
-        "id": "7693f62ecce93ec6",
+        "id": "e74d69b81aa5524a",
         "type": "change",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MensagemManual",
         "rules": [
             {
@@ -521,13 +524,6 @@
                 "pt": "msg",
                 "to": "romulo_e_samuel/config/modo",
                 "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "ui_control.disabled",
-                "pt": "msg",
-                "to": "not(payload)",
-                "tot": "jsonata"
             }
         ],
         "action": "",
@@ -535,20 +531,21 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1170,
-        "y": 1100,
+        "x": 850,
+        "y": 1060,
         "wires": [
             [
-                "b34c09c91d51bab7",
-                "d67f12746d545216",
-                "b4fc2379635abbfe"
+                "3271014c63d225ee",
+                "2c59408b6e6fc719",
+                "ceb1fa0ebd0ab083",
+                "93705169df6a781e"
             ]
         ]
     },
     {
-        "id": "4f4c981d65672e7b",
+        "id": "0af5bd41515ff3fe",
         "type": "function",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "ParserFormularioLimiares",
         "func": "const dados = msg.payload;\n\nconst msgTemp = { payload: dados.temp_max, topic: \"romulo_e_samuel/config/temp_max\" };\nconst msgUmi  = { payload: dados.umi_min,  topic: \"romulo_e_samuel/config/umi_min\" };\nconst msgLuz  = { payload: dados.luz_max,  topic: \"romulo_e_samuel/config/luz_max\" };\n\nreturn [ [msgTemp, msgUmi, msgLuz] ];",
         "outputs": 1,
@@ -557,18 +554,18 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 920,
+        "x": 530,
+        "y": 880,
         "wires": [
             [
-                "b4fc2379635abbfe"
+                "ceb1fa0ebd0ab083"
             ]
         ]
     },
     {
-        "id": "b4fc2379635abbfe",
+        "id": "ceb1fa0ebd0ab083",
         "type": "mqtt out",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Publicador",
         "topic": "",
         "qos": "",
@@ -579,14 +576,14 @@
         "correl": "",
         "expiry": "",
         "broker": "3aba9510429dc5a7",
-        "x": 1230,
-        "y": 1420,
+        "x": 910,
+        "y": 1380,
         "wires": []
     },
     {
-        "id": "5402247044d243d4",
+        "id": "eb02aa45f735d4e7",
         "type": "change",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "ParserCmdCooler",
         "rules": [
             {
@@ -609,18 +606,18 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1630,
-        "y": 1220,
+        "x": 1310,
+        "y": 1180,
         "wires": [
             [
-                "b4fc2379635abbfe"
+                "ceb1fa0ebd0ab083"
             ]
         ]
     },
     {
-        "id": "9c34836325b53f7c",
+        "id": "1186566b17f69ebf",
         "type": "change",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "ParserCmdCortina",
         "rules": [
             {
@@ -636,20 +633,20 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1450,
-        "y": 1260,
+        "x": 1130,
+        "y": 1220,
         "wires": [
             [
-                "b4fc2379635abbfe"
+                "ceb1fa0ebd0ab083"
             ]
         ]
     },
     {
-        "id": "03b943603b718861",
+        "id": "1d2382b26e820456",
         "type": "function",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "ParserLimiarTemp",
-        "func": "const tempMaxConfirmada = parseFloat(msg.payload);\n\n// Validação de segurança\nif (isNaN(tempMaxConfirmada)) {\n    node.error(\"Parser recebeu um valor inválido: \" + msg.payload);\n    return null;\n}\n\n// Criamos o objeto cobrindo todo o range (de 0 a 50)\nconst novaMensagem = {\n    ui_update: {\n        \"min\": 0,\n        \"max\": 50,\n        \"segments\": [\n            { \"from\": 0, \"color\": \"#4caf50\" },\n            { \"from\": tempMaxConfirmada, \"color\": \"#f44336\" }\n        ]\n    }\n};\n\nreturn novaMensagem;",
+        "func": "const tempMaxConfirmada = parseFloat(msg.payload);\n\nif (isNaN(tempMaxConfirmada)) {\n    node.error(\"Parser recebeu um valor inválido: \" + msg.payload);\n    return null;\n}\n\nconst novaMensagem = {\n    ui_update: {\n        \"min\": 0,\n        \"max\": 50,\n        \"segments\": [\n            { \"from\": 0, \"color\": \"#4caf50\" },\n            { \"from\": tempMaxConfirmada, \"color\": \"#f44336\" }\n        ]\n    }\n};\n\nreturn novaMensagem;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -660,15 +657,15 @@
         "y": 60,
         "wires": [
             [
-                "2b55edb23ca740b4",
-                "ae5b34b3b1219cca"
+                "ba9fc5c099da6d0d",
+                "29d96824f5c95174"
             ]
         ]
     },
     {
-        "id": "9738e7944c90370f",
+        "id": "5f8d06d18aab549d",
         "type": "mqtt in",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Confirma Temp",
         "topic": "romulo_e_samuel/confirmacao/temp_max",
         "qos": "2",
@@ -682,14 +679,14 @@
         "y": 100,
         "wires": [
             [
-                "03b943603b718861"
+                "1d2382b26e820456"
             ]
         ]
     },
     {
-        "id": "1849a95498311631",
+        "id": "46174765217158b8",
         "type": "mqtt in",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Confirma Umi",
         "topic": "romulo_e_samuel/confirmacao/umi_min",
         "qos": "2",
@@ -703,14 +700,14 @@
         "y": 140,
         "wires": [
             [
-                "093daf5cc83772b1"
+                "dbae6c6c791b5fdd"
             ]
         ]
     },
     {
-        "id": "07aed5773e200ae3",
+        "id": "b6d8c944c58640e7",
         "type": "mqtt in",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Confirma Luz",
         "topic": "romulo_e_samuel/confirmacao/luz_max",
         "qos": "2",
@@ -724,16 +721,16 @@
         "y": 360,
         "wires": [
             [
-                "e2e41e941574ab3a"
+                "e2197be6a7dadddf"
             ]
         ]
     },
     {
-        "id": "093daf5cc83772b1",
+        "id": "dbae6c6c791b5fdd",
         "type": "function",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "ParserLimiarUmi",
-        "func": "const umiMinConfirmada = parseFloat(msg.payload);\n\n// Validação de segurança\nif (isNaN(umiMinConfirmada)) {\n    node.error(\"Parser recebeu um valor inválido: \" + msg.payload);\n    return null;\n}\n\n// Criamos o objeto cobrindo todo o range (de 0 a 50)\nconst novaMensagem = {\n    ui_update: {\n        \"min\": 0,\n        \"max\": 100,\n        \"segments\": [\n            { \"from\": 0, \"color\": \"#f44336\" },\n            { \"from\": umiMinConfirmada, \"color\": \"#4caf50\"}\n        ]\n    }\n};\n\nreturn novaMensagem;",
+        "func": "const umiMinConfirmada = parseFloat(msg.payload);\n\nif (isNaN(umiMinConfirmada)) {\n    node.error(\"Parser recebeu um valor inválido: \" + msg.payload);\n    return null;\n}\n\nconst novaMensagem = {\n    ui_update: {\n        \"min\": 0,\n        \"max\": 100,\n        \"segments\": [\n            { \"from\": 0, \"color\": \"#f44336\" },\n            { \"from\": umiMinConfirmada, \"color\": \"#4caf50\"}\n        ]\n    }\n};\n\nreturn novaMensagem;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -744,16 +741,16 @@
         "y": 140,
         "wires": [
             [
-                "8fcdc7f65b66ec16"
+                "ab3a16d7c038fadc"
             ]
         ]
     },
     {
-        "id": "e2e41e941574ab3a",
+        "id": "e2197be6a7dadddf",
         "type": "function",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "ParserLimiarLuz",
-        "func": "const luzMaxConfirmada = parseFloat(msg.payload);\nif (isNaN(luzMaxConfirmada)) return null;\n\nconst novaMensagem = {\n    ui_control: {\n        \"min\": 0,\n        \"max\": 255,\n        \"segments\": [\n            { \"from\": 0, \"color\": \"#4caf50\" },      \n            { \"from\": luzMaxConfirmada, \"color\": \"#f44336\" }\n        ]\n    }\n};\nreturn novaMensagem;",
+        "func": "const luzMaxConfirmada = parseFloat(msg.payload);\n\nif (isNaN(luzMaxConfirmada)) {\n    node.error(\"Parser recebeu um valor inválido: \" + msg.payload);\n    return null;\n}\n\nconst novaMensagem = {\n    ui_update: {\n        \"min\": 0,\n        \"max\": 255,\n        \"segments\": [\n            { \"from\" : 0, \"color\": \"#4caf50\"},\n            { \"from\": luzMaxConfirmada, \"color\": \"#f44336\" }\n        ]\n    }\n};\n\nreturn novaMensagem;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -764,16 +761,17 @@
         "y": 360,
         "wires": [
             [
-                "dfd7c957619903c9"
+                "8e2e1e5bf24f46e3",
+                "b5d9c08a922edeab"
             ]
         ]
     },
     {
-        "id": "dfd7c957619903c9",
+        "id": "8e2e1e5bf24f46e3",
         "type": "ui-gauge",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "Luminosidade Externa",
-        "group": "61af6c45fd141680",
+        "group": "f9c37a7d9054dcee",
         "order": 4,
         "value": "payload",
         "valueType": "msg",
@@ -811,9 +809,9 @@
         ]
     },
     {
-        "id": "dda939f63f38eb45",
+        "id": "e110f869e14ce80e",
         "type": "inject",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MockLuzInterna",
         "props": [
             {
@@ -835,14 +833,14 @@
         "y": 40,
         "wires": [
             [
-                "84406ad272151570"
+                "7dccfb7f13c753a0"
             ]
         ]
     },
     {
-        "id": "e576da9295c83e97",
+        "id": "cc793bc389b18761",
         "type": "inject",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MockLuzExterna",
         "props": [
             {
@@ -864,14 +862,14 @@
         "y": 40,
         "wires": [
             [
-                "dfd7c957619903c9"
+                "8e2e1e5bf24f46e3"
             ]
         ]
     },
     {
-        "id": "1f6bd99a540961be",
+        "id": "6fa6c5d71ee8fd9b",
         "type": "inject",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MockTempAlta",
         "props": [
             {
@@ -893,14 +891,14 @@
         "y": 80,
         "wires": [
             [
-                "ae5b34b3b1219cca"
+                "29d96824f5c95174"
             ]
         ]
     },
     {
-        "id": "236f5b8c664bd226",
+        "id": "cf4145670cbd7e30",
         "type": "inject",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MockLimLuz",
         "props": [
             {
@@ -922,14 +920,14 @@
         "y": 500,
         "wires": [
             [
-                "e2e41e941574ab3a"
+                "e2197be6a7dadddf"
             ]
         ]
     },
     {
-        "id": "d14d7d5f1d8880fa",
+        "id": "38d6260704ac10cc",
         "type": "inject",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MockLimTemp",
         "props": [
             {
@@ -947,15 +945,15 @@
         "y": 60,
         "wires": [
             [
-                "03b943603b718861",
-                "6cd49bab0ab12050"
+                "1d2382b26e820456",
+                "6b5d8f5c3b2da6f5"
             ]
         ]
     },
     {
-        "id": "8c35609317278309",
+        "id": "31e5c0b82ef188fd",
         "type": "inject",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MockTempBaixa",
         "props": [
             {
@@ -977,14 +975,14 @@
         "y": 120,
         "wires": [
             [
-                "ae5b34b3b1219cca"
+                "29d96824f5c95174"
             ]
         ]
     },
     {
-        "id": "2b55edb23ca740b4",
+        "id": "ba9fc5c099da6d0d",
         "type": "debug",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "debugParserLimiTemp",
         "active": true,
         "tosidebar": true,
@@ -999,9 +997,9 @@
         "wires": []
     },
     {
-        "id": "6cd49bab0ab12050",
+        "id": "6b5d8f5c3b2da6f5",
         "type": "debug",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "debugMock",
         "active": true,
         "tosidebar": true,
@@ -1016,9 +1014,9 @@
         "wires": []
     },
     {
-        "id": "33ee7a916785a3d1",
+        "id": "37a99e2a9321d494",
         "type": "inject",
-        "z": "dd002821fcc9f65a",
+        "z": "9e05ebad5d0f23f8",
         "name": "MockLimUmi",
         "props": [
             {
@@ -1036,9 +1034,267 @@
         "y": 220,
         "wires": [
             [
-                "093daf5cc83772b1"
+                "dbae6c6c791b5fdd"
             ]
         ]
+    },
+    {
+        "id": "b5d9c08a922edeab",
+        "type": "debug",
+        "z": "9e05ebad5d0f23f8",
+        "name": "debugParserLimiarLuz",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "ui_update",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1590,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "0a7f196ca27560ad",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockCortina",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 270,
+        "y": 600,
+        "wires": [
+            [
+                "0ba7ea3cf4674bae"
+            ]
+        ]
+    },
+    {
+        "id": "2fc285fb0c43f0f5",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockCooler",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 680,
+        "wires": [
+            [
+                "903db09f2575439c"
+            ]
+        ]
+    },
+    {
+        "id": "903db09f2575439c",
+        "type": "function",
+        "z": "9e05ebad5d0f23f8",
+        "name": "ParserStatusCooler",
+        "func": "msg.payload === true ? msg.payload = \"Ligado\" : msg.payload = \"Desligado\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 680,
+        "wires": [
+            [
+                "d7860f89a46fb032",
+                "b879d7039b415e13"
+            ]
+        ]
+    },
+    {
+        "id": "d7860f89a46fb032",
+        "type": "debug",
+        "z": "9e05ebad5d0f23f8",
+        "name": "debugParserCooler",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 760,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "1c1a263de9b98559",
+        "type": "debug",
+        "z": "9e05ebad5d0f23f8",
+        "name": "debugBotaoManual",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "93705169df6a781e",
+        "type": "debug",
+        "z": "9e05ebad5d0f23f8",
+        "name": "debugMensagemManual",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "ui_update.disabled",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1340,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "b905f8df819e4597",
+        "type": "ui-notification",
+        "z": "9e05ebad5d0f23f8",
+        "ui": "126704c6a66171f0",
+        "position": "top right",
+        "colorDefault": false,
+        "color": "#e01b24",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Alerta Temperatura",
+        "x": 1050,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5907678d6d7363c0",
+        "type": "ui-notification",
+        "z": "9e05ebad5d0f23f8",
+        "ui": "126704c6a66171f0",
+        "position": "top right",
+        "colorDefault": false,
+        "color": "#e01b24",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Alerta Luminosidade",
+        "x": 1060,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0774473bee5d199",
+        "type": "ui-notification",
+        "z": "9e05ebad5d0f23f8",
+        "ui": "126704c6a66171f0",
+        "position": "top right",
+        "colorDefault": false,
+        "color": "#e01b24",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Alerta Umidade",
+        "x": 1040,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c56ff31a148b03d8",
+        "type": "function",
+        "z": "9e05ebad5d0f23f8",
+        "name": "OcultaControlesManuais",
+        "func": "// Verifica se o payload é booleano ou string representando booleano\nconst isManual = (msg.payload === true || msg.payload === \"true\");\n\nlet novaMensagem;\n\n\nnovaMensagem = {\n    \n        enabled : isManual\n    \n}\n\nreturn novaMensagem",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 1160,
+        "wires": [
+            [
+                "3271014c63d225ee",
+                "2c59408b6e6fc719",
+                "754f9d786fc004b0"
+            ]
+        ]
+    },
+    {
+        "id": "754f9d786fc004b0",
+        "type": "debug",
+        "z": "9e05ebad5d0f23f8",
+        "name": "debugAaaa",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "ui_update",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 600,
+        "y": 1300,
+        "wires": []
     },
     {
         "id": "3aba9510429dc5a7",
@@ -1072,7 +1328,7 @@
         "sessionExpiry": ""
     },
     {
-        "id": "61af6c45fd141680",
+        "id": "f9c37a7d9054dcee",
         "type": "ui-group",
         "name": "Indicadores de ambiente",
         "page": "7e2919f8ac251370",
@@ -1086,7 +1342,7 @@
         "groupType": "default"
     },
     {
-        "id": "840109b6fbf1c21f",
+        "id": "733337ddc94bad58",
         "type": "ui-group",
         "name": "Editar Limiares",
         "page": "7e2919f8ac251370",
@@ -1100,7 +1356,7 @@
         "groupType": "default"
     },
     {
-        "id": "dea80e4a15dd75e6",
+        "id": "02aa8637919cf834",
         "type": "ui-group",
         "name": "Status dos atuadores",
         "page": "7e2919f8ac251370",
@@ -1114,7 +1370,7 @@
         "groupType": "default"
     },
     {
-        "id": "92ca39749a9e6e12",
+        "id": "c6ae8b98409f5dd8",
         "type": "ui-group",
         "name": "Controle manual",
         "page": "7e2919f8ac251370",
@@ -1126,6 +1382,26 @@
         "visible": "true",
         "disabled": "false",
         "groupType": "default"
+    },
+    {
+        "id": "126704c6a66171f0",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
     },
     {
         "id": "7e2919f8ac251370",
@@ -1160,28 +1436,8 @@
         ],
         "order": 1,
         "className": "",
-        "visible": true,
-        "disabled": false
-    },
-    {
-        "id": "126704c6a66171f0",
-        "type": "ui-base",
-        "name": "My Dashboard",
-        "path": "/dashboard",
-        "appIcon": "",
-        "includeClientData": true,
-        "acceptsClientConfig": [
-            "ui-notification",
-            "ui-control"
-        ],
-        "showPathInSidebar": false,
-        "headerContent": "page",
-        "navigationStyle": "default",
-        "titleBarStyle": "default",
-        "showReconnectNotification": true,
-        "notificationDisplayTime": 1,
-        "showDisconnectNotification": true,
-        "allowInstall": false
+        "visible": "true",
+        "disabled": "false"
     },
     {
         "id": "6ebf63e95bf9fb0c",
@@ -1203,7 +1459,7 @@
         }
     },
     {
-        "id": "f624671469a85e76",
+        "id": "5f52ec9ae3d52bb4",
         "type": "global-config",
         "env": [],
         "modules": {
