@@ -1,0 +1,1568 @@
+[
+    {
+        "id": "9e05ebad5d0f23f8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a603d190746ab5cc",
+        "type": "mqtt in",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MQTT Lux Externa",
+        "topic": "romulo_e_samuel/luminosidade-externa",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3aba9510429dc5a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 160,
+        "wires": [
+            [
+                "8e2e1e5bf24f46e3"
+            ]
+        ]
+    },
+    {
+        "id": "46dfd495c82c74ad",
+        "type": "mqtt in",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MQTT Lux Interna",
+        "topic": "romulo_e_samuel/luminosidade-interna",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3aba9510429dc5a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "7dccfb7f13c753a0"
+            ]
+        ]
+    },
+    {
+        "id": "2fb5e517f849ce12",
+        "type": "mqtt in",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MQTT Umidade",
+        "topic": "romulo_e_samuel/umidade",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3aba9510429dc5a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "ab3a16d7c038fadc"
+            ]
+        ]
+    },
+    {
+        "id": "6cf8d46fd6d28f29",
+        "type": "mqtt in",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MQTT Temperatura",
+        "topic": "romulo_e_samuel/temperatura",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3aba9510429dc5a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "29d96824f5c95174"
+            ]
+        ]
+    },
+    {
+        "id": "be20fe201518f7f8",
+        "type": "mqtt in",
+        "z": "9e05ebad5d0f23f8",
+        "name": "",
+        "topic": "romulo_e_samuel/cortina",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3aba9510429dc5a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c804026c8af49a4c",
+        "type": "mqtt in",
+        "z": "9e05ebad5d0f23f8",
+        "name": "",
+        "topic": "romulo_e_samuel/cooler",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3aba9510429dc5a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 480,
+        "wires": [
+            [
+                "b879d7039b415e13"
+            ]
+        ]
+    },
+    {
+        "id": "29d96824f5c95174",
+        "type": "ui-gauge",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Temperatura",
+        "group": "f9c37a7d9054dcee",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#4caf50",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "50",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 950,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7dccfb7f13c753a0",
+        "type": "ui-gauge",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Luminosidade Interna",
+        "group": "f9c37a7d9054dcee",
+        "order": 3,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Luminosidade Interna",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#4caf50",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "255",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 760,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab3a16d7c038fadc",
+        "type": "ui-gauge",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Umidade",
+        "group": "f9c37a7d9054dcee",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Umidade",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#33d17a",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 740,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4af9b0181a157f85",
+        "type": "ui-form",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Formulario de limiares",
+        "group": "733337ddc94bad58",
+        "label": "Limiares",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Temperatura Maxima",
+                "key": "temp_max",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Luminosidade Maxima",
+                "key": "luz_max",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Umidade Minima",
+                "key": "umi_min",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "temp_max": "",
+            "luz_max": "",
+            "umi_min": ""
+        },
+        "payload": "",
+        "submit": "Enviar",
+        "cancel": "Limpar",
+        "resetOnSubmit": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "passthru": false,
+        "dropdownOptions": [],
+        "x": 200,
+        "y": 860,
+        "wires": [
+            [
+                "0af5bd41515ff3fe"
+            ]
+        ]
+    },
+    {
+        "id": "b879d7039b415e13",
+        "type": "ui-text",
+        "z": "9e05ebad5d0f23f8",
+        "group": "02aa8637919cf834",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Status Cooler",
+        "label": "Estado do Cooler",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 660,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d37928a62c6ced89",
+        "type": "ui-text",
+        "z": "9e05ebad5d0f23f8",
+        "group": "02aa8637919cf834",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Status Cortina",
+        "label": "Posicao da Cortina",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 900,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3271014c63d225ee",
+        "type": "ui-switch",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Controle cooler",
+        "label": "Switch Cooler",
+        "group": "c6ae8b98409f5dd8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1200,
+        "y": 1060,
+        "wires": [
+            [
+                "eb02aa45f735d4e7"
+            ]
+        ]
+    },
+    {
+        "id": "7d03a911b13f0433",
+        "type": "ui-switch",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Modo Manual",
+        "label": "Modo Manual",
+        "group": "c6ae8b98409f5dd8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 900,
+        "y": 920,
+        "wires": [
+            [
+                "e74d69b81aa5524a",
+                "1c1a263de9b98559",
+                "c56ff31a148b03d8",
+                "956639d11600acce",
+                "c0447375029373a3"
+            ]
+        ]
+    },
+    {
+        "id": "e74d69b81aa5524a",
+        "type": "change",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MensagemManual",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "romulo_e_samuel/config/modo",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 1060,
+        "wires": [
+            [
+                "3271014c63d225ee",
+                "ceb1fa0ebd0ab083",
+                "93705169df6a781e"
+            ]
+        ]
+    },
+    {
+        "id": "0af5bd41515ff3fe",
+        "type": "function",
+        "z": "9e05ebad5d0f23f8",
+        "name": "ParserFormularioLimiares",
+        "func": "const dados = msg.payload;\n\nconst msgTemp = { payload: dados.temp_max, topic: \"romulo_e_samuel/config/temp_max\" };\nconst msgUmi  = { payload: dados.umi_min,  topic: \"romulo_e_samuel/config/umi_min\" };\nconst msgLuz  = { payload: dados.luz_max,  topic: \"romulo_e_samuel/config/luz_max\" };\n\nreturn [ [msgTemp, msgUmi, msgLuz] ];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 880,
+        "wires": [
+            [
+                "ceb1fa0ebd0ab083",
+                "42a62ff01b7ce2b3"
+            ]
+        ]
+    },
+    {
+        "id": "ceb1fa0ebd0ab083",
+        "type": "mqtt out",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Publicador",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "3aba9510429dc5a7",
+        "x": 1110,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "eb02aa45f735d4e7",
+        "type": "change",
+        "z": "9e05ebad5d0f23f8",
+        "name": "ParserCmdCooler",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "romulo_e_samuel/cmd/cooler",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload ? 1 : 0",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1310,
+        "y": 1180,
+        "wires": [
+            [
+                "ceb1fa0ebd0ab083"
+            ]
+        ]
+    },
+    {
+        "id": "1186566b17f69ebf",
+        "type": "change",
+        "z": "9e05ebad5d0f23f8",
+        "name": "ParserCmdCortina",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "romulo_e_samuel/cmd/cortina",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1130,
+        "y": 1220,
+        "wires": [
+            [
+                "ceb1fa0ebd0ab083"
+            ]
+        ]
+    },
+    {
+        "id": "1d2382b26e820456",
+        "type": "function",
+        "z": "9e05ebad5d0f23f8",
+        "name": "ParserLimiarTemp",
+        "func": "const tempMaxConfirmada = parseFloat(msg.payload);\n\nif (isNaN(tempMaxConfirmada)) {\n    node.error(\"Parser recebeu um valor inválido: \" + msg.payload);\n    return null;\n}\n\nconst novaMensagem = {\n    ui_update: {\n        \"min\": 0,\n        \"max\": 50,\n        \"segments\": [\n            { \"from\": 0, \"color\": \"#4caf50\" },\n            { \"from\": tempMaxConfirmada, \"color\": \"#f44336\" }\n        ]\n    }\n};\n\nreturn novaMensagem;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1370,
+        "y": 60,
+        "wires": [
+            [
+                "29d96824f5c95174"
+            ]
+        ]
+    },
+    {
+        "id": "5f8d06d18aab549d",
+        "type": "mqtt in",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Confirma Temp",
+        "topic": "romulo_e_samuel/confirmacao/temp_max",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3aba9510429dc5a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1120,
+        "y": 100,
+        "wires": [
+            [
+                "1d2382b26e820456"
+            ]
+        ]
+    },
+    {
+        "id": "46174765217158b8",
+        "type": "mqtt in",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Confirma Umi",
+        "topic": "romulo_e_samuel/confirmacao/umi_min",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3aba9510429dc5a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1370,
+        "y": 140,
+        "wires": [
+            [
+                "dbae6c6c791b5fdd"
+            ]
+        ]
+    },
+    {
+        "id": "b6d8c944c58640e7",
+        "type": "mqtt in",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Confirma Luz",
+        "topic": "romulo_e_samuel/confirmacao/luz_max",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3aba9510429dc5a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1190,
+        "y": 360,
+        "wires": [
+            [
+                "e2197be6a7dadddf"
+            ]
+        ]
+    },
+    {
+        "id": "dbae6c6c791b5fdd",
+        "type": "function",
+        "z": "9e05ebad5d0f23f8",
+        "name": "ParserLimiarUmi",
+        "func": "const umiMinConfirmada = parseFloat(msg.payload);\n\nif (isNaN(umiMinConfirmada)) {\n    node.error(\"Parser recebeu um valor inválido: \" + msg.payload);\n    return null;\n}\n\nconst novaMensagem = {\n    ui_update: {\n        \"min\": 0,\n        \"max\": 100,\n        \"segments\": [\n            { \"from\": 0, \"color\": \"#f44336\" },\n            { \"from\": umiMinConfirmada, \"color\": \"#4caf50\" }\n        ]\n    }\n};\n\nreturn novaMensagem;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 140,
+        "wires": [
+            [
+                "ab3a16d7c038fadc"
+            ]
+        ]
+    },
+    {
+        "id": "e2197be6a7dadddf",
+        "type": "function",
+        "z": "9e05ebad5d0f23f8",
+        "name": "ParserLimiarLuz",
+        "func": "const luzMaxConfirmada = parseFloat(msg.payload);\n\nif (isNaN(luzMaxConfirmada)) {\n    node.error(\"Parser recebeu um valor inválido: \" + msg.payload);\n    return null;\n}\n\nconst novaMensagem = {\n    ui_update: {\n        \"min\": 0,\n        \"max\": 255,\n        \"segments\": [\n            { \"from\" : 0, \"color\": \"#4caf50\"},\n            { \"from\": luzMaxConfirmada, \"color\": \"#f44336\" }\n        ]\n    }\n};\n\nreturn novaMensagem;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1380,
+        "y": 360,
+        "wires": [
+            [
+                "8e2e1e5bf24f46e3"
+            ]
+        ]
+    },
+    {
+        "id": "8e2e1e5bf24f46e3",
+        "type": "ui-gauge",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Luminosidade Externa",
+        "group": "f9c37a7d9054dcee",
+        "order": 4,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Luminosidade Externa",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#4caf50",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "255",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 720,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e110f869e14ce80e",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockLuzInterna",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "100",
+        "payloadType": "num",
+        "x": 420,
+        "y": 40,
+        "wires": [
+            [
+                "7dccfb7f13c753a0"
+            ]
+        ]
+    },
+    {
+        "id": "cc793bc389b18761",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockLuzExterna",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "num",
+        "x": 200,
+        "y": 40,
+        "wires": [
+            [
+                "8e2e1e5bf24f46e3"
+            ]
+        ]
+    },
+    {
+        "id": "6fa6c5d71ee8fd9b",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockTempAlta",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "30",
+        "payloadType": "num",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "29d96824f5c95174"
+            ]
+        ]
+    },
+    {
+        "id": "cf4145670cbd7e30",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockLimLuz",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "150",
+        "payloadType": "num",
+        "x": 1230,
+        "y": 500,
+        "wires": [
+            [
+                "e2197be6a7dadddf"
+            ]
+        ]
+    },
+    {
+        "id": "38d6260704ac10cc",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockLimTemp",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "21.2",
+        "payloadType": "num",
+        "x": 970,
+        "y": 60,
+        "wires": [
+            [
+                "1d2382b26e820456"
+            ]
+        ]
+    },
+    {
+        "id": "31e5c0b82ef188fd",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockTempBaixa",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "20",
+        "payloadType": "num",
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "29d96824f5c95174"
+            ]
+        ]
+    },
+    {
+        "id": "37a99e2a9321d494",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockLimUmi",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50.1",
+        "payloadType": "num",
+        "x": 1150,
+        "y": 220,
+        "wires": [
+            [
+                "dbae6c6c791b5fdd"
+            ]
+        ]
+    },
+    {
+        "id": "0a7f196ca27560ad",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockCortina",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "45",
+        "payloadType": "num",
+        "x": 390,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2fc285fb0c43f0f5",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockCooler",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 270,
+        "y": 680,
+        "wires": [
+            [
+                "903db09f2575439c"
+            ]
+        ]
+    },
+    {
+        "id": "903db09f2575439c",
+        "type": "function",
+        "z": "9e05ebad5d0f23f8",
+        "name": "ParserStatusCooler",
+        "func": "msg.payload === true || msg.payload == 1 ? msg.payload = \"Ligado\" : msg.payload = \"Desligado\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 680,
+        "wires": [
+            [
+                "b879d7039b415e13"
+            ]
+        ]
+    },
+    {
+        "id": "1c1a263de9b98559",
+        "type": "debug",
+        "z": "9e05ebad5d0f23f8",
+        "name": "debugBotaoManual",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "93705169df6a781e",
+        "type": "debug",
+        "z": "9e05ebad5d0f23f8",
+        "name": "debugMensagemManual",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "ui_update.disabled",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1340,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "b905f8df819e4597",
+        "type": "ui-notification",
+        "z": "9e05ebad5d0f23f8",
+        "ui": "126704c6a66171f0",
+        "position": "top right",
+        "colorDefault": false,
+        "color": "#e01b24",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Alerta Temperatura",
+        "x": 1050,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5907678d6d7363c0",
+        "type": "ui-notification",
+        "z": "9e05ebad5d0f23f8",
+        "ui": "126704c6a66171f0",
+        "position": "top right",
+        "colorDefault": false,
+        "color": "#e01b24",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Alerta Luminosidade",
+        "x": 1060,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0774473bee5d199",
+        "type": "ui-notification",
+        "z": "9e05ebad5d0f23f8",
+        "ui": "126704c6a66171f0",
+        "position": "top right",
+        "colorDefault": false,
+        "color": "#e01b24",
+        "displayTime": "3",
+        "showCountdown": true,
+        "outputs": 1,
+        "allowDismiss": true,
+        "dismissText": "Close",
+        "allowConfirm": false,
+        "confirmText": "Confirm",
+        "raw": false,
+        "className": "",
+        "name": "Alerta Umidade",
+        "x": 1040,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c56ff31a148b03d8",
+        "type": "function",
+        "z": "9e05ebad5d0f23f8",
+        "name": "OcultaControlesManuais",
+        "func": "// Verifica se o payload é booleano ou string representando booleano\nconst isManual = (msg.payload === true || msg.payload === \"true\");\n\nlet novaMensagem;\n\n\nnovaMensagem = {\n    \n        enabled : isManual\n    \n}\n\nreturn novaMensagem",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 1160,
+        "wires": [
+            [
+                "3271014c63d225ee",
+                "c4c4bc955b25886b",
+                "c0447375029373a3"
+            ]
+        ]
+    },
+    {
+        "id": "c4c4bc955b25886b",
+        "type": "ui-switch",
+        "z": "9e05ebad5d0f23f8",
+        "name": "Controle umidificador",
+        "label": "Switch Umidificador",
+        "group": "c6ae8b98409f5dd8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1520,
+        "y": 1080,
+        "wires": [
+            [
+                "e0cab8dbad568bd4"
+            ]
+        ]
+    },
+    {
+        "id": "e0cab8dbad568bd4",
+        "type": "change",
+        "z": "9e05ebad5d0f23f8",
+        "name": "ParserCmdUmidifcador",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "romulo_e_samuel/cmd/umidificador",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload ? 1 : 0",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1670,
+        "y": 980,
+        "wires": [
+            [
+                "ceb1fa0ebd0ab083"
+            ]
+        ]
+    },
+    {
+        "id": "b0c84a7568987438",
+        "type": "ui-text",
+        "z": "9e05ebad5d0f23f8",
+        "group": "02aa8637919cf834",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Status Umidificador",
+        "label": "Estado do Umidificador",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 850,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "30a12781682451c0",
+        "type": "mqtt in",
+        "z": "9e05ebad5d0f23f8",
+        "name": "",
+        "topic": "romulo_e_samuel/umidificador",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3aba9510429dc5a7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 540,
+        "wires": [
+            [
+                "b0c84a7568987438"
+            ]
+        ]
+    },
+    {
+        "id": "42a62ff01b7ce2b3",
+        "type": "debug",
+        "z": "9e05ebad5d0f23f8",
+        "name": "debugForm",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 767.75,
+        "y": 835.75,
+        "wires": []
+    },
+    {
+        "id": "956639d11600acce",
+        "type": "change",
+        "z": "9e05ebad5d0f23f8",
+        "name": "TopicoManual",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "romulo_e_samuel/config/modo",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1280,
+        "wires": [
+            [
+                "ceb1fa0ebd0ab083"
+            ]
+        ]
+    },
+    {
+        "id": "c0447375029373a3",
+        "type": "ui-radio-group",
+        "z": "9e05ebad5d0f23f8",
+        "group": "c6ae8b98409f5dd8",
+        "name": "Controle Angulo",
+        "label": "Angulacao Cortina",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "columns": 1,
+        "passthru": false,
+        "options": [
+            {
+                "label": "Fechado",
+                "value": "45",
+                "type": "str"
+            },
+            {
+                "label": "Aberto",
+                "value": "135",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 560,
+        "y": 1020,
+        "wires": [
+            [
+                "1186566b17f69ebf"
+            ]
+        ]
+    },
+    {
+        "id": "d68079824084639f",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockUmidifcador",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 260,
+        "y": 600,
+        "wires": [
+            [
+                "59310c94a666ddb7"
+            ]
+        ]
+    },
+    {
+        "id": "59310c94a666ddb7",
+        "type": "function",
+        "z": "9e05ebad5d0f23f8",
+        "name": "ParserStatusUmidificador",
+        "func": "msg.payload === true || msg.payload == 1 ? msg.payload = \"Ligado\" : msg.payload = \"Desligado\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 600,
+        "wires": [
+            [
+                "b0c84a7568987438"
+            ]
+        ]
+    },
+    {
+        "id": "0ba7c762d8eae365",
+        "type": "inject",
+        "z": "9e05ebad5d0f23f8",
+        "name": "MockCortina2",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "135",
+        "payloadType": "num",
+        "x": 410,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3aba9510429dc5a7",
+        "type": "mqtt-broker",
+        "name": "sensores",
+        "broker": "broker.emqx.io",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f9c37a7d9054dcee",
+        "type": "ui-group",
+        "name": "Indicadores de ambiente",
+        "page": "7e2919f8ac251370",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "733337ddc94bad58",
+        "type": "ui-group",
+        "name": "Editar Limiares",
+        "page": "7e2919f8ac251370",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "02aa8637919cf834",
+        "type": "ui-group",
+        "name": "Status dos atuadores",
+        "page": "7e2919f8ac251370",
+        "width": 6,
+        "height": 1,
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "c6ae8b98409f5dd8",
+        "type": "ui-group",
+        "name": "Controle manual",
+        "page": "7e2919f8ac251370",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "126704c6a66171f0",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "7e2919f8ac251370",
+        "type": "ui-page",
+        "name": "Estufa",
+        "ui": "126704c6a66171f0",
+        "path": "/estufa",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "6ebf63e95bf9fb0c",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6ebf63e95bf9fb0c",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "aad04e09d8d24a79",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.30.2"
+        }
+    }
+]
